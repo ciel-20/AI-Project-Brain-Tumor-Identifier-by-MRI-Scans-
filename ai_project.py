@@ -11,7 +11,7 @@ from keras.layers import Conv2D, Flatten, Dense, MaxPooling2D, Dropout, Input
 base_dir = './dataset'
 
 # List of labels (subfolder names)
-labels = ['glioma_tumor', 'meningioma_tumor', 'no_tumor', 'pituitary_tumor']
+labels = ['GliomaTumor', 'MeningiomaTumor', 'NoTumor', 'PituitaryTumor']
 
 # Image size and arrays to hold the data
 image_size = 150

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Classification Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Brain Tumor Classification Result</h1>
+        <p class="result-text">The uploaded image is classified as:</p>
+        <div class="classification">
+            <span class="classification-result">{{ classification }}</span>
+        </div>
+        <div class="result-section">
+            <div class="result-card">
+                <p>Uploaded Image</p>
+                <img src="{{ uploaded_image }}" alt="Uploaded Image">
+            </div>
+        </div>
+        <button class="retry-button" onclick="window.location.href='/'">Upload Another Image</button>
+    </div>
+</body>
+</html>

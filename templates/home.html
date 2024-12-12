@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brain Tumor Classifier</title>
-    <!-- Link to external CSS -->
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Brain Tumor Classifier</h1>
         <form action="/predict" method="post" enctype="multipart/form-data">
-            <label for="file">Upload a brain MRI image:</label>
             <input type="file" id="file" name="file" accept="image/*" required>
-            <button type="submit">Analyze</button>
+            <button type="submit">Predict</button>
         </form>
         <footer>
-            Powered by AI | © 2024
+            <p>Powered by <a href="https://kaggle.com" target="_blank">Kaggle</a></p>
         </footer>
     </div>
 </body>
